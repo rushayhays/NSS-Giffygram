@@ -6,19 +6,33 @@
       "id": 2
     },
     {
-        "name": "Bryan",
-        "email": "bryan@bn.com",
-        "id": 1
+      "name": "Bryan",
+      "email": "bryan@bn.com",
+      "id": 1
     }
   ],
   "posts": [
     {
-        "id": 1,
-        "imageURL": "https://media.giphy.com/media/26xBI73gWquCBBCDe/giphy.gif",
-        "userId": 1,
-        "description": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
-        "timestamp": 1561695022812,
-        "title": "Enhanced global utilisation"
+      "id": 1,
+      "imageURL": "https://media.giphy.com/media/26xBI73gWquCBBCDe/giphy.gif",
+      "userId": 1,
+      "description": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
+      "timestamp": 1561695022812,
+      "title": "Enhanced global utilisation"
+    },
+    {
+      "imageURL": "https://media.giphy.com/media/deMygWDfAg0WTaYb33/giphy.gif",
+      "userId": 1,
+      "description": "Drag Queen on a boat, all in the name of Tazo Tea.",
+      "title": "HEYYY",
+      "id": 2
+    },
+    {
+      "imageURL": "https://media.giphy.com/media/yiWwzfXwV3R6/giphy.gif",
+      "userId": 1,
+      "description": "Raphael is cool but rude (Gimmie a break!) Michelangelo is a party dude (Party!",
+      "title": "Party!",
+      "id": 3
     }
   ],
   "messages": [],

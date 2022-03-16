@@ -47,3 +47,26 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 25%;
 }
 
+
+/* this is code I'm adding in to keep the pictures small */
+/* main {
+    display:flex;
+}
+nav{
+    flex:1;
+}
+.entryform {
+    flex:1;
+}
+.center {
+    flex:1;
+}
+.postList {
+    flex:1;
+}
+footer {
+    flex:1;
+} */
+.postList {
+    margin-bottom:8rem;
+}
