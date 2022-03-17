@@ -69,4 +69,10 @@ footer {
 } */
 .postList {
     margin-bottom:8rem;
+    display:flex;
+    flex-direction: column-reverse;
+}
+
+.entryForm {
+    margin-top: 8rem;
 }
