@@ -16,7 +16,7 @@ import { PostEntry } from "./feed/postEntry.js"
 
 
 import { PostList } from "./feed/postlist.js"
-import { usePostCollection } from "./feed/post.js"
+import { usePostCollection } from "./data/dataManager.js"
 import { NavBar } from "./nav/NavBar.js"
 import { Footer } from "./footer/footer.js"
 import { createPost } from "./data/dataManager.js"

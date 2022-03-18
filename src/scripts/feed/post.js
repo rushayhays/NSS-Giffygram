@@ -13,27 +13,11 @@ export const Post = (postObject) => {
     <div><button id="edit--${postObject.id}">Edit</button></div>
     <div class="new__description">
       <blockquote>${postObject.description}</blockquote>
-      <p>Posted by: ${postObject.user.name}</p>
+      <p>Posted by: Bryan</p>
       <p>${theDate}</p>
     </div>
   </section>
   `
 }
-  
-let postCollection = [];
+  //will need to fix it to get the name
 
-export const usePostCollection = () => {
-  //Best practice: we don't want to alter the original state, so
-  //make a copy of it and then return it
-  //The spread operator makes this quick work
-  return [...postCollection];
-}
-
-export const getPosts = () => {
-  return fetch("http://localhost:8088/posts")
-    .then(response => response.json())
-    .then(parsedResponse => {
-      postCollection = parsedResponse
-      return parsedResponse;
-    })
-}
