@@ -6,19 +6,91 @@
       "id": 2
     },
     {
-        "name": "Bryan",
-        "email": "bryan@bn.com",
-        "id": 1
+      "name": "Bryan",
+      "email": "bryan@bn.com",
+      "id": 1
     }
   ],
   "posts": [
     {
-        "id": 1,
-        "imageURL": "https://media.giphy.com/media/26xBI73gWquCBBCDe/giphy.gif",
-        "userId": 1,
-        "description": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
-        "timestamp": 1561695022812,
-        "title": "Enhanced global utilisation"
+      "id": 1,
+      "imageURL": "https://media.giphy.com/media/26xBI73gWquCBBCDe/giphy.gif",
+      "userId": 1,
+      "description": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
+      "timestamp": 1561695022812,
+      "title": "Enhanced global utilisation"
+    },
+    {
+      "imageURL": "https://media.giphy.com/media/deMygWDfAg0WTaYb33/giphy.gif",
+      "userId": 1,
+      "description": "Drag Queen on a boat, all in the name of Tazo Tea.",
+      "timestamp": 1509855922000,
+      "title": "HEYYY",
+      "id": 2
+    },
+    {
+      "imageURL": "https://media.giphy.com/media/yiWwzfXwV3R6/giphy.gif",
+      "userId": 1,
+      "description": "Raphael is cool but rude (Gimmie a break!) Michelangelo is a party dude (Party!",
+      "timestamp": 1532322074000,
+      "title": "Party!",
+      "id": 3
+    },
+    {
+      "title": "Happy Saint Patty's Day",
+      "imageURL": "https://media.giphy.com/media/2z0OViv5TdAGs/giphy.gif",
+      "description": "No matter what it is, there's a cat for that",
+      "userId": 1,
+      "timestamp": 1554745279000,
+      "id": 4
+    },
+    {
+      "title": "Happy Patrick's Day",
+      "imageURL": "https://media.giphy.com/media/qQZAQQZP029NK/giphy.gif",
+      "description": "No saint",
+      "userId": 1,
+      "timestamp": 1647546733296,
+      "id": 5
+    },
+    {
+      "title": "Rare Moment in History",
+      "imageURL": "https://media.giphy.com/media/bBNw4HHQ2J2De/giphy.gif",
+      "description": "Didn't think I would find this",
+      "userId": 1,
+      "timestamp": 1647549421258,
+      "id": 6
+    },
+    {
+      "title": "her it goes",
+      "imageURL": "https://media.giphy.com/media/bBNw4HHQ2J2De/giphy.gif",
+      "description": "makye",
+      "userId": 1,
+      "timestamp": 1647549808034,
+      "id": 7
+    },
+    {
+      "title": "kay",
+      "imageURL": "https://media.giphy.com/media/bBNw4HHQ2J2De/giphy.gif",
+      "description": "masdfkds;lfk;ldsfk",
+      "userId": 1,
+      "timestamp": 1647550072815,
+      "id": 8
+    },
+    {
+      "title": "Latest",
+      "imageURL": "https://media.giphy.com/media/bBNw4HHQ2J2De/giphy.gif",
+      "description": "cool",
+      "userId": 1,
+      "timestamp": 1647550245115,
+      "id": 9
+    },
+    {
+      "title": "after",
+      "imageURL": "https://media.giphy.com/media/bBNw4HHQ2J2De/giphy.gif",
+      "description": "ahdahr",
+      "userId": 1,
+      "timestamp": 1647550298909,
+      "id": 10
     }
   ],
   "messages": [],
