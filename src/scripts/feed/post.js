@@ -11,6 +11,7 @@ export const Post = (postObject) => {
       <img class="post__image" src="${postObject.imageURL}" />
     </div>
     <div><button id="edit--${postObject.id}">Edit</button></div>
+    <button id="delete__${postObject.id}">Delete</button>
     <div class="new__description">
       <blockquote>${postObject.description}</blockquote>
       <p>Posted by: Bryan</p>

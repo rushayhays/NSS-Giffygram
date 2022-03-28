@@ -20,6 +20,8 @@ import { usePostCollection } from "./data/dataManager.js"
 import { NavBar } from "./nav/NavBar.js"
 import { Footer } from "./footer/footer.js"
 import { createPost } from "./data/dataManager.js"
+import { deletePost } from "./data/dataManager.js"
+
 
 console.log("It works, Yay")
 
@@ -182,5 +184,16 @@ applicationElement.addEventListener("click", event => {
 
 		createPost(postObject).then(showPostList)
 		clearEntryForm();
+	}
+  })
+
+  applicationElement.addEventListener("click", event => {
+	event.preventDefault();
+	if (event.target.id.startsWith("delete")) {
+	  const postId = event.target.id.split("__")[1];
+	  deletePost(postId)
+		.then(response => {
+		  showPostList();
+		})
 	}
   })
