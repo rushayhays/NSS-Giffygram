@@ -9,6 +9,11 @@
       "name": "Bryan",
       "email": "bryan@bn.com",
       "id": 1
+    },
+    {
+      "name": "Rushay",
+      "email": "rush@ry.com",
+      "id": 3
     }
   ],
   "posts": [
@@ -47,7 +52,7 @@
     {
       "title": "Happy Patrick's Day",
       "imageURL": "https://media.giphy.com/media/qQZAQQZP029NK/giphy.gif",
-      "description": "No saint",
+      "description": "No saint, but he is a Patrick",
       "userId": 1,
       "timestamp": 1647546733296,
       "id": 5
