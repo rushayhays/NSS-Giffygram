@@ -14,6 +14,11 @@
       "name": "Rushay",
       "email": "rush@ry.com",
       "id": 3
+    },
+    {
+      "name": "Howdy",
+      "email": "howdy@doody.com",
+      "id": 4
     }
   ],
   "posts": [
@@ -35,7 +40,7 @@
     },
     {
       "imageURL": "https://media.giphy.com/media/yiWwzfXwV3R6/giphy.gif",
-      "userId": 1,
+      "userId": 2,
       "description": "Raphael is cool but rude (Gimmie a break!) Michelangelo is a party dude (Party!",
       "timestamp": 1532322074000,
       "title": "Party!",
@@ -45,7 +50,7 @@
       "title": "Happy Saint Patty's Day",
       "imageURL": "https://media.giphy.com/media/2z0OViv5TdAGs/giphy.gif",
       "description": "No matter what it is, there's a cat for that",
-      "userId": 1,
+      "userId": 2,
       "timestamp": 1554745279000,
       "id": 4
     },
@@ -56,6 +61,22 @@
       "userId": 1,
       "timestamp": 1647546733296,
       "id": 5
+    },
+    {
+      "title": "Fresh Moves of Bel Air",
+      "imageURL": "https://media.giphy.com/media/l6c2iEKAXwHYs/giphy.gif",
+      "description": "Now this is a story all about how..",
+      "userId": 4,
+      "timestamp": 1648653683016,
+      "id": 6
+    },
+    {
+      "title": "Blursed Owl",
+      "imageURL": "https://media.giphy.com/media/U6RHKzg7fXU1YYzVk2/giphy.gif",
+      "description": "My favorite cute/terrifying owl demon",
+      "userId": 4,
+      "timestamp": 1648653852599,
+      "id": 7
     }
   ],
   "messages": [],

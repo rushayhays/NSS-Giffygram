@@ -15,7 +15,7 @@ import { getPosts } from "./data/dataManager.js"
 import { PostEntry } from "./feed/postEntry.js"
 
 
-import { PostList } from "./feed/postlist.js"
+import { PostList, yourPostList } from "./feed/postlist.js"
 import { usePostCollection } from "./data/dataManager.js"
 import { NavBar } from "./nav/NavBar.js"
 import { Footer } from "./footer/footer.js"
@@ -37,26 +37,40 @@ const showNavBar = () => {
 	navElement.innerHTML = NavBar();
 }
 
-//how I wrote it
-// const showPostEntry = () => {
-// 	//Get a reference to the location on the DOM where the list will display
-// 	const postElement = document.querySelector(".entryForm");
-// 	postElement.innerHTML = PostEntry();
-// }
 
-//how she wrote it
+
 const showPostEntry = () => { 
 	//Get a reference to the location on the DOM where the nav will display
 	const entryElement = document.querySelector(".entryForm");
 	entryElement.innerHTML = PostEntry();
-  }
+}
 
+//This will show the user's posts
+const showUserPostList = () => {
+	//Get a reference to the location on the DOM where the list will display
+	const postElement = document.querySelector(".userPostList");
+	let user = JSON.parse(sessionStorage.getItem("user"))
+	getPosts().then((allPosts) => {
+		let userCollection = [];
+		console.log(allPosts.length)
+		for(let x=0; x<allPosts.length; x++){
+		  if(allPosts[x].userId === user.id){
+			userCollection.push(allPosts[x])
+		  }
+		}
+
+		postElement.innerHTML = yourPostList(userCollection);
+		console.log(userCollection)
+	})
+}
+
+
+//THis will show everyone else's posts
 const showPostList = () => {
 	//Get a reference to the location on the DOM where the list will display
 	const postElement = document.querySelector(".postList");
 	getPosts().then((allPosts) => {
 		postElement.innerHTML = PostList(allPosts);
-		console.log(usePostCollection())
 	})
 }
 
@@ -70,6 +84,7 @@ const showFooter = () => {
 const startGiffyGram = () => {
     showNavBar();
 	showPostEntry();
+	showUserPostList();
 	showPostList();
 	showFooter();
 }
@@ -174,12 +189,14 @@ applicationElement.addEventListener("click", event => {
 	  const url = document.querySelector("input[name='postURL']").value
 	  const description = document.querySelector("textarea[name='postDescription']").value
 	  //we have not created a user yet - for now, we will hard code `1`.
+	  const user = JSON.parse(sessionStorage.getItem("user"));
+	  const userId = user.id;
 	  //we can add the current time as well
 	  const postObject = {
 		  title: title,
 		  imageURL: url,
 		  description: description,
-		  userId: 1,
+		  userId: userId,
 		  timestamp: Date.now()
 	  }
   
@@ -271,6 +288,9 @@ const showLoginRegister = () => {
 	//make sure the post list is cleared out too
 	const postElement = document.querySelector(".postList");
 	postElement.innerHTML = "";
+	//also clear out userPostList
+	const userPostElement = document.querySelector(".userPostList");
+	userPostElement.innerHTML = "";
 }
 
 const checkForUser = () => {

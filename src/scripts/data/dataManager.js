@@ -28,22 +28,9 @@ export const getUsers = () => {
     })
 }
 
-// ("http://localhost:8088/posts?_sort=id&_order=desc")
-
-
-// export const getPosts = () => {
-
-//     return fetch("http://localhost:8088/posts?_expand=user")
-    
-//     .then(response => response.json())
-//     .then(parsedResponse => {
-//         // do something with response here
-//         return parsedResponse;
-//     })
-// }
-
+//expanded user
 export const createPost = postObj => {
-    return fetch("http://localhost:8088/posts", {
+    return fetch("http://localhost:8088/posts?_expand=user", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -64,13 +51,29 @@ export const usePostCollection = () => {
   return [...postCollection];
 }
 export const getPosts = () => {
-  return fetch("http://localhost:8088/posts")
+  return fetch("http://localhost:8088/posts?_expand=user")
     .then(response => response.json())
     .then(parsedResponse => {
       postCollection = parsedResponse
       return parsedResponse;
     })
 }
+
+//This should only return the users posts
+// export const getUserPosts = () => {
+//   return fetch("http://localhost:8088/posts")
+//     .then(response => response.json())
+//     .then(parsedResponse => {
+//       postCollection = parsedResponse
+//       let userCollection = [];
+//       for(let x=0; x<parsedResponse.length; x++){
+//         if(loggedInUser.id === parsedResponse[x].userId){
+//           userCollection.push(parsedResponse[x])
+//         }
+//       }
+//       return userCollection;
+//     })
+// }
 
 export const deletePost = postId => {
     return fetch(`http://localhost:8088/posts/${postId}`, {
